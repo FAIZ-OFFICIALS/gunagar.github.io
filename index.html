@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ur" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>    -   </title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Arial, sans-serif;
+        }
+        
+        body {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            color: #333;
+            line-height: 1.6;
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            margin-top: 30px;
+        }
+        
+        h1 {
+            color: #2d3a80;
+            margin-bottom: 20px;
+            font-size: 32px;
+        }
+        
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color: #555;
+        }
+        
+        .ad-box {
+            background: #f9f9f9;
+            border: 2px dashed #6e8efb;
+            border-radius: 10px;
+            padding: 25px;
+            margin: 25px 0;
+            transition: all 0.3s ease;
+        }
+        
+        .ad-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(106, 142, 251, 0.2);
+        }
+        
+        .ad-title {
+            font-size: 22px;
+            color: #2d3a80;
+            margin-bottom: 15px;
+        }
+        
+        .ad-content {
+            min-height: 200px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        .ad-content img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+        }
+        
+        .click-btn {
+            background: #ff6b6b;
+            color: white;
+            border: none;
+            padding: 12px 30px;
+            border-radius: 50px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            margin-top: 15px;
+        }
+        
+        .click-btn:hover {
+            background: #ff5252;
+            transform: scale(1.05);
+        }
+        
+        .counter {
+            font-size: 18px;
+            margin-top: 20px;
+            color: #666;
+            background: #f0f5ff;
+            padding: 10px 20px;
+            border-radius: 50px;
+            display: inline-block;
+        }
+        
+        .counter span {
+            font-weight: 700;
+            color: #6e8efb;
+        }
+        
+        .instructions {
+            background: #eef4ff;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 30px 0;
+            text-align: right;
+        }
+        
+        .instructions h2 {
+            color: #2d3a80;
+            margin-bottom: 15px;
+        }
+        
+        .instructions ol {
+            text-align: right;
+            margin-right: 20px;
+        }
+        
+        .instructions li {
+            margin-bottom: 10px;
+        }
+        
+        footer {
+            margin-top: 40px;
+            padding: 20px;
+            color: #666;
+            font-size: 16px;
+            border-top: 1px solid #eee;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            h1 {
+                font-size: 28px;
+            }
+            
+            p {
+                font-size: 16px;
+            }
+            
+            .click-btn {
+                padding: 10px 25px;
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>   </h1>
+        <p>                    !</p>
+        
+        <div class="ad-box">
+            <div class="ad-title"> </div>
+            <div class="ad-content">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='150' viewBox='0 0 300 150'%3E%3Crect width='300' height='150' fill='%236e8efb' fill-opacity='0.3'/%3E%3Ctext x='150' y='80' font-family='Arial' font-size='20' text-anchor='middle' fill='%236e8efb'%3E%D9%85%DB%8C%DA%BA %DA%A9%DB%8C%D8%A7 %D9%87%DB%92%3C/text%3E%3C/svg%3E" alt="">
+                <p>    50%   !</p>
+                <button class="click-btn" onclick="countClick(1)"> </button>
+                <div class="counter"> : <span id="click-count-1">0</span></div>
+            </div>
+        </div>
+        
+        <div class="ad-box">
+            <div class="ad-title"> </div>
+            <div class="ad-content">
+                <img src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='300' height='150' viewBox='0 0 300 150'%3E%3Crect width='300' height='150' fill='%23ff6b6b' fill-opacity='0.3'/%3E%3Ctext x='150' y='80' font-family='Arial' font-size='20' text-anchor='middle' fill='%23ff6b6b'%3E%DA%A9%D9%85%D8%A7%D8%A6%DB%8C %DA%A9%D8%A7 %D9%85%D9%86%D8%A7%D8%B1%DA%A9%3C/text%3E%3C/svg%3E" alt="">
+                <p>        !</p>
+                <button class="click-btn" onclick="countClick(2)"> </button>
+                <div class="counter"> : <span id="click-count-2">0</span></div>
+            </div>
+        </div>
+        
+        <div class="instructions">
+            <h2>   </h2>
+            <ol>
+                <li>      </li>
+                <li>          </li>
+                <li>     </li>
+                <li>       </li>
+            </ol>
+        </div>
+        
+        <footer>
+            <p>      !</p>
+            <p>© 2023        </p>
+        </footer>
+    </div>
+
+    <script>
+        let clickCount1 = 0;
+        let clickCount2 = 0;
+        
+        function countClick(adNumber) {
+            if (adNumber === 1) {
+                clickCount1++;
+                document.getElementById('click-count-1').textContent = clickCount1;
+                
+                if (clickCount1 % 3 === 0) {
+                    alert('!     $0.05  ');
+                }
+            } else if (adNumber === 2) {
+                clickCount2++;
+                document.getElementById('click-count-2').textContent = clickCount2;
+                
+                if (clickCount2 % 3 === 0) {
+                    alert('!     $0.05  ');
+                }
+            }
+        }
+    </script>
+</body>
+</html>
